@@ -1,6 +1,23 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "keywords": [
+    "CyberLabs",
+    "Graduation Project",
+    "backend",
+    "Nodejs",
+    "Express",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL"
+  ],
+  "author": "CyberLabs Team",
+  "license": "ISC",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts"
+    "start": "nodemon src/index.ts",
+    "build": "tsc",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
@@ -44,15 +61,8 @@
     "i": "^0.3.7",
     "nodemon": "^3.1.4",
     "npm": "^11.1.0",
-    "prisma": "^6.3.1",
+    "prisma": "^6.16.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
-  },
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }

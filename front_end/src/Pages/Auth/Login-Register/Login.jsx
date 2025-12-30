@@ -1,16 +1,18 @@
 import axios from "axios";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Cookie from "cookie-universal";
 import "./form.css";
 import "./register-login.css";
 import Preloader from "../../Website/Preloader/Preloader";
+import { useNavigate } from "react-router-dom";
 export default function Login() {
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
   const cookie = Cookie();
-   const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
   const [err, setErr] = useState("");
   function handleChange(e) {
     e.preventDefault();
@@ -21,19 +23,31 @@ export default function Login() {
     setLoading(true);
     setErr("");
     try {
-      const res = await axios.post("http://127.0.0.1:8080/api/login", form);
+      const res = await axios.post(
+        "https://digitopia-project-backend.vercel.app/api/login",
+        form
+      );
       setLoading(false);
       const token = res.data.data.token;
       cookie.set("CuberWeb", token);
-      window.location.pathname = `/home`;
+      navigate("/home");
     } catch (error) {
       setLoading(false);
+      setLoading(false);
       if (error.response) {
-        if (error.response.status === 401) {
-          setErr("Wrong Email or Password");
+        const status = error.response.status;
+        const message = error.response.data;
+
+        if (status === 404 && message === "Not a user") {
+          setErr("User does not exist");
+        } else if (status === 401 && message === "Invalid name or password") {
+          setErr("Wrong password");
+        } else if (status === 401 && message === "User not verified") {
+          setErr("Your account is not verified yet");
         } else {
-          setErr("Internal server error");
+          setErr("Something went wrong. Please try again.");
         }
+
         console.error(error.response.data);
       } else {
         setErr("Network Error");
@@ -41,14 +55,14 @@ export default function Login() {
       }
     }
   }
-useEffect(() => {
-        const timer = setTimeout(() => {
-          setLoading(false);
-        }, 300);
-        return () => clearTimeout(timer);
-      }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <body className="login-register-body">
+    <div className="login-register-body">
       {loading && <Preloader loading={loading} />}
       <div className="container">
         <div className="rows hh-100">
@@ -109,6 +123,6 @@ useEffect(() => {
           </form>
         </div>
       </div>
-    </body>
+    </div>
   );
 }

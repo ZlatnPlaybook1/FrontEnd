@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Cookie from "cookie-universal";
 import axios from "axios";
-import SearchIcon from "../Components/SearchIcon/SearchIcon"; 
+import SearchIcon from "../Components/SearchIcon/SearchIcon";
 import Aos from "aos";
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [profileListVisible, setProfileListVisible] = useState(false);
   const [userImage, setUserImage] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
-  const [searchTerm, setSearchTerm] = useState(""); 
+  const [searchTerm, setSearchTerm] = useState("");
 
   const cookie = Cookie();
   const token = cookie.get("CuberWeb");
@@ -27,12 +27,15 @@ const Header = () => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const res = await axios.get("http://127.0.0.1:8080/api/personalInfo", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const res = await axios.get(
+          "https://digitopia-project-backend.vercel.app/api/personalInfo",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
         const data = res.data.data;
         const imageUrl = data.image
-          ? `http://127.0.0.1:8080/${data.image.path.replace("\\", "/")}`
+          ? `${data.image.path.replace("\\", "/")}`
           : "";
         setUserImage(imageUrl);
       } catch (error) {
@@ -53,9 +56,9 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
- useEffect(() => {
-      Aos.init({ duration: 1000 });
-    }, []);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <header
       className={`header ${isScrolled ? "sticky" : ""}`}
@@ -93,42 +96,58 @@ const Header = () => {
             }`}
             id="main-navbar"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/"
+                ar_title="الرئيسة"
+                en_title="Home">
                   Home
                 </a>
               </li>
               <li className="nav-item">
                 {token ? (
-                  <NavLink className="nav-link " to="/home">
+                  <NavLink className="nav-link " to="/home"
+                  ar_title="مسار التعلم"
+                  en_title="Learning">
                     Learning
                   </NavLink>
                 ) : (
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/"
+                  ar_title="مسار التعلم"
+                  en_title="Learning"
+                  >
                     Learning
                   </NavLink>
                 )}
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about-us">
+                <a className="nav-link" href="/about-us"
+                ar_title="من نحن"
+                en_title="About Us">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#learningPath">
+                <a className="nav-link" href="#learningPath"
+                ar_title="مسار التعلم"
+                en_title="Learning Path">
                   Learning Path
                 </a>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
+                <NavLink className="nav-link" to="/contact"
+                ar_title="اتصل بنا"
+                en_title="Contact">
                   Contact
                 </NavLink>
               </li>
 
               {/* Search Icon for small screens - placed in dropdown area */}
               <li className="nav-item dropdown-search-icon d-block d-md-none">
-                <SearchIcon searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+                <SearchIcon
+                  searchTerm={searchTerm}
+                  setSearchTerm={setSearchTerm}
+                />
               </li>
             </ul>
 
@@ -136,7 +155,10 @@ const Header = () => {
             <div className="d-flex align-items-center gap-3">
               {/* Search Icon for medium+ screens */}
               <div className="search-icon-container d-none d-md-flex">
-                <SearchIcon searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+                <SearchIcon
+                  searchTerm={searchTerm}
+                  setSearchTerm={setSearchTerm}
+                />
               </div>
 
               {token ? (
@@ -153,7 +175,7 @@ const Header = () => {
                         style={{ width: "50px", height: "50px" }}
                       />
                     ) : (
-                      <i class="fa-solid fa-circle-user primary-text fs-2"></i>
+                      <i className="fa-solid fa-circle-user primary-text fs-2"></i>
                     )}
                   </button>
                   {profileListVisible && (

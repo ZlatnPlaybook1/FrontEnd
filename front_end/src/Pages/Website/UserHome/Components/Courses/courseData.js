@@ -2,14 +2,23 @@ const courseData = [
   {
     id: 1,
     category: "Career & Industry",
-    title: "Careers in Cyber",
-    description:
+    en_title: "Careers in Cyber",
+    ar_title: "المهن في الأمن السيبراني",
+    en_description:
       "Discover diverse cybersecurity careers, essential skills, and industry opportunities today.",
+    ar_description:
+      "اكتشف مسارات مهنية متنوعة في الأمن السيبراني، والمهارات الأساسية، وفرص الصناعة اليوم.",
     topics: [
       "Overview of Cyber Careers",
       "Educational Paths",
       "Industry Certifications",
       "Job Market Trends",
+    ],
+    ar_topics: [
+      "نظرة عامة على وظائف الأمن السيبراني",
+      "المسارات التعليمية",
+      "الشهادات الصناعية",
+      "اتجاهات سوق العمل",
     ],
     difficulty: "Beginner",
     image: require("../../assets/img/CareersInCyber/landing.jpg"),
@@ -21,14 +30,23 @@ const courseData = [
   {
     id: 2,
     category: "Tools & Techniques",
-    title: "Burp Suite",
-    description:
+    en_title: "Burp Suite",
+    ar_title: "Burp Suite",
+    en_description:
       "Master Burp Suite fundamentals, empowering cybersecurity testing and vulnerability assessment.",
+    ar_description:
+      "إتقان أساسيات Burp Suite، مما يمكّن اختبار الأمن السيبراني وتقييم الثغرات.",
     topics: [
       "Learn about different careers in cyber",
       "Hack your first application",
       "Defend against a live cyber attack",
       "Explore security topics in the industry",
+    ],
+    ar_topics: [
+      "تعرف على مسارات مهنية مختلفة في مجال الأمن السيبراني",
+      "اختراق تطبيقك الأول",
+      "الدفاع ضد هجوم سيبراني مباشر",
+      "استكشاف مواضيع الأمان في الصناعة",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Burp_Suit/BurpSuit_Content.png"),
@@ -40,14 +58,23 @@ const courseData = [
   {
     id: 3,
     category: "Fundamentals",
-    title: "Cookies",
-    description:
+    en_title: "Cookies",
+    ar_title: "الكوكيز",
+    en_description:
       "Understand cookies’ roles, security implications, storage methods, and manipulation techniques.",
+    ar_description:
+      "فهم أدوار الكوكيز، والآثار الأمنية، وطرق التخزين، وتقنيات التلاعب.",
     topics: [
       "What Are Cookies?",
       "What are Cookies Used For?",
       "Where are Cookies Stored?",
       "Cookies Manipulation",
+    ],
+    ar_topics: [
+      "ما هي الكوكيز؟",
+      "ما هي استخدامات الكوكيز؟",
+      "أين يتم تخزين الكوكيز؟",
+      "تلاعب الكوكيز",
     ],
     difficulty: "Beginner",
     image: require("../../assets/img/cookies/Cookies_transparent.png"),
@@ -59,14 +86,23 @@ const courseData = [
   {
     id: 4,
     category: "Vulnerabilities",
-    title: "SQL Injection",
-    description:
+    en_title: "SQL Injection",
+    ar_title: "حقن SQL",
+    en_description:
       "Identify SQL injection flaws, extract hidden data, and secure applications.",
+    ar_description:
+      "تحديد عيوب حقن SQL، واستخراج البيانات المخفية، وتأمين التطبيقات.",
     topics: [
       "Retrieving hidden data",
       "SQL injection UNION attacks",
       "Finding columns with a useful data type",
       "Using a SQL injection UNION attack to retrieve interesting data",
+    ],
+    ar_topics: [
+      "استرجاع البيانات المخفية",
+      "هجمات SQL injection UNION",
+      "البحث عن أعمدة ذات نوع بيانات مفيد",
+      "استخدام هجوم SQL injection UNION لاسترجاع بيانات مثيرة للاهتمام",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/SQL_Injection/landing3.png"),
@@ -78,14 +114,23 @@ const courseData = [
   {
     id: 5,
     category: "Vulnerabilities",
-    title: "Unrestricted File Upload",
-    description:
+    en_title: "Unrestricted File Upload",
+    ar_title: "تحميل الملفات غير المقيد",
+    en_description:
       "Explore file upload risks, techniques, and methods to safeguard applications.",
+    ar_description:
+      "استكشاف مخاطر تحميل الملفات، والتقنيات، وطرق حماية التطبيقات.",
     topics: [
       "What is Unrestricted File Upload?",
       "Why is it Dangerous?",
       "Attack Techniques",
       "Exploitation Scenarios",
+    ],
+    ar_topics: [
+      "ما هو تحميل الملفات غير المقيد؟",
+      "لماذا هو خطير؟",
+      "تقنيات الهجوم",
+      "سيناريوهات الاستغلال",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Unrestricted File Upload/card_image.png"),
@@ -97,14 +142,23 @@ const courseData = [
   {
     id: 6,
     category: "Fundamentals",
-    title: "Linux Fundamentals",
-    description:
+    en_title: "Linux Fundamentals",
+    ar_title: "أساسيات لينكس",
+    en_description:
       "Build essential Linux skills, mastering commands, filesystem navigation and operations.",
+    ar_description:
+      "بناء مهارات لينكس الأساسية، وإتقان الأوامر، والتنقل في نظام الملفات والعمليات.",
     topics: [
       "Running Your First Few Commands",
       "Interacting with the Filesystem",
       "Searching for Files",
       "Introduction to Shell Operators",
+    ],
+    ar_topics: [
+      "تشغيل أوامرك القليلة الأولى",
+      "التفاعل مع نظام الملفات",
+      "البحث عن الملفات",
+      "مقدمة في مشغلات الشل",
     ],
     difficulty: "Beginner",
     image: require("../../assets/img/linux/card_image.png"),
@@ -116,14 +170,23 @@ const courseData = [
   {
     id: 7,
     category: "Vulnerabilities",
-    title: "Access Control Vulnerabilities",
-    description:
+    en_title: "Access Control Vulnerabilities",
+    ar_title: "ثغرات التحكم في الوصول",
+    en_description:
       "Learn to detect and mitigate access control vulnerabilities in applications.",
+    ar_description:
+      "تعلم كيفية اكتشاف وتخفيف ثغرات التحكم في الوصول في التطبيقات.",
     topics: [
       "What are Access Control Vulnerabilities?",
       "Types of Access Control Flaws",
       "Exploitation Examples",
       "Mitigation Techniques",
+    ],
+    ar_topics: [
+      "ما هي ثغرات التحكم في الوصول؟",
+      "أنواع عيوب التحكم في الوصول",
+      "أمثلة على الاستغلال",
+      "تقنيات التخفيف",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/ACV/Landing.jpg"),
@@ -135,14 +198,23 @@ const courseData = [
   {
     id: 8,
     category: "Vulnerabilities",
-    title: "Broken Authentication",
-    description:
+    en_title: "Broken Authentication",
+    ar_title: "المصادقة المحطمة",
+    en_description:
       "Secure authentication mechanisms to prevent account takeovers and data breaches.",
+    ar_description:
+      "تأمين آليات المصادقة لمنع استيلاء الحسابات وانتهاكات البيانات.",
     topics: [
       "Weak Passwords",
       "Session Management Issues",
       "Lack of MFA",
       "Credential Stuffing",
+    ],
+    ar_topics: [
+      "كلمات المرور الضعيفة",
+      "مشاكل إدارة الجلسة",
+      "نقص المصادقة متعددة العوامل",
+      "حشو بيانات الاعتماد",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Broken Authentication/card_image.png"),
@@ -154,10 +226,13 @@ const courseData = [
   {
     id: 9,
     category: "Fundamentals",
-    title: "Bash Scripting",
-    description:
+    en_title: "Bash Scripting",
+    ar_title: "برمجة باش",
+    en_description:
       "Develop efficient Bash scripts to automate tasks and system management.",
+    ar_description: "تطوير سكريبتات باش فعالة لأتمتة المهام وإدارة النظام.",
     topics: ["simple bash scripts", "Variables", "Parameters", "Arrays"],
+    ar_topics: ["سكريبتات باش بسيطة", "المتغيرات", "المعلمات", "المصفوفات"],
     difficulty: "Beginner",
     image: require("../../assets/img/bash/bash_course_logo.png"),
     state: "published",
@@ -168,14 +243,23 @@ const courseData = [
   {
     id: 10,
     category: "Vulnerabilities",
-    title: "Business Logic Vulnerabilities",
-    description:
+    en_title: "Business Logic Vulnerabilities",
+    ar_title: "ثغرات منطق الأعمال",
+    en_description:
       "Analyze business logic flaws, exploitation methods, and strategies for mitigation.",
+    ar_description:
+      "تحليل عيوب منطق الأعمال، وطرق الاستغلال، واستراتيجيات التخفيف.",
     topics: [
       "Understanding Business Logic",
       "Identifying Flaws",
       "Exploitation Techniques",
       "Mitigation Strategies",
+    ],
+    ar_topics: [
+      "فهم منطق الأعمال",
+      "تحديد العيوب",
+      "تقنيات الاستغلال",
+      "استراتيجيات التخفيف",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/BLV/Landing.jpg"),
@@ -187,15 +271,25 @@ const courseData = [
   {
     id: 11,
     category: "Vulnerabilities",
-    title: "Insecure Direct Object Reference(IDOR)",
-    description:
+    en_title: "Insecure Direct Object Reference(IDOR)",
+    ar_title: "الإشارة غير الآمنة إلى الكائن المباشر (IDOR)",
+    en_description:
       "Explore IDOR vulnerabilities, unauthorized access, common examples, and mitigation strategies.",
+    ar_description:
+      "استكشاف ثغرات IDOR، والوصول غير المصرح به، والأمثلة الشائعة، واستراتيجيات التخفيف.",
     topics: [
       "What is IDOR?",
       "Why is it Dangerous?",
       "Common Examples.",
       "Exploitation Techniques.",
       "Mitigation Strategies.",
+    ],
+    ar_topics: [
+      "ما هو IDOR؟",
+      "لماذا هو خطير؟",
+      "أمثلة شائعة.",
+      "تقنيات الاستغلال.",
+      "استراتيجيات التخفيف.",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/IDOR/Insecure_Direct_Object_Reference.png"),
@@ -207,14 +301,22 @@ const courseData = [
   {
     id: 12,
     category: "Tools & Techniques",
-    title: "Obfuscation",
-    description:
+    en_title: "Obfuscation",
+    ar_title: "التشويش",
+    en_description:
       "Learn code obfuscation techniques to protect intellectual property and security.",
+    ar_description: "تعلم تقنيات تشويش الشفرة لحماية الملكية الفكرية والأمان.",
     topics: [
       "What are Obfuscation & Deobfuscation?",
       "Why do we use Obfuscation?",
       "Javascript Obfuscation",
       "JS Deobfuscation Tools",
+    ],
+    ar_topics: [
+      "ما هو التشويش وإزالة التشويش؟",
+      "لماذا نستخدم التشويش؟",
+      "تشويش جافا سكريبت",
+      "أدوات إزالة تشويش جافا سكريبت",
     ],
     difficulty: "Beginner",
     image: require("../../assets/img/Obfuscation/card_image.png"),
@@ -226,14 +328,23 @@ const courseData = [
   {
     id: 13,
     category: "Vulnerabilities",
-    title: "Cross Site Request Forgery (CSRF)",
-    description:
+    en_title: "Cross Site Request Forgery (CSRF)",
+    ar_title: "تزوير طلبات المواقع المتقاطعة (CSRF)",
+    en_description:
       "Understand CSRF attack vectors, mitigation techniques, and prevention best practices.",
+    ar_description:
+      "فهم متجهات هجوم CSRF، وتقنيات التخفيف، وأفضل ممارسات الوقاية.",
     topics: [
       "Understanding CSRF",
       "Exploitation Methods",
       "Prevention Techniques",
       "Real-world Examples",
+    ],
+    ar_topics: [
+      "فهم CSRF",
+      "طرق الاستغلال",
+      "تقنيات الوقاية",
+      "أمثلة من العالم الحقيقي",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/CSRF/landing.jpg"),
@@ -245,14 +356,22 @@ const courseData = [
   {
     id: 14,
     category: "Vulnerabilities",
-    title: "Path Traversal",
-    description:
+    en_title: "Path Traversal",
+    ar_title: "تجاوز المسار",
+    en_description:
       "Discover path traversal techniques and prevention measures for secure files.",
+    ar_description: "اكتشف تقنيات تجاوز المسار وتدابير الوقاية للملفات الآمنة.",
     topics: [
       "Path traversal techniques",
       "Directory traversal prevention",
       "Secure file access mechanisms",
       "Case Studies",
+    ],
+    ar_topics: [
+      "تقنيات تجاوز المسار",
+      "منع تجاوز الدليل",
+      "آليات الوصول الآمن للملفات",
+      "دراسات الحالة",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Path__Traversal/Photo_Content_Path_Traversal.png"),
@@ -264,14 +383,23 @@ const courseData = [
   {
     id: 15,
     category: "Fundamentals",
-    title: "Cryptography",
-    description:
+    en_title: "Cryptography",
+    ar_title: "علم التشفير",
+    en_description:
       "Master cryptography principles, encryption types, and techniques for secure communications.",
+    ar_description:
+      "إتقان مبادئ علم التشفير، وأنواع التشفير، وتقنيات الاتصالات الآمنة.",
     topics: [
       "What is Cryptography?",
       "What is Steganography?",
       "How does Steganography differ from Cryptography?",
       "Types of Encryption",
+    ],
+    ar_topics: [
+      "ما هو علم التشفير؟",
+      "ما هو إخفاء المعلومات؟",
+      "كيف يختلف إخفاء المعلومات عن علم التشفير؟",
+      "أنواع التشفير",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Cryptography/card_image.png"),
@@ -283,14 +411,23 @@ const courseData = [
   {
     id: 16,
     category: "Fundamentals",
-    title: "Regular expressions",
-    description:
+    en_title: "Regular expressions",
+    ar_title: "التعبيرات النمطية",
+    en_description:
       "Craft effective regular expressions for text matching, searching, and parsing.",
+    ar_description:
+      "صياغة تعبيرات نمطية فعالة لمطابقة النصوص والبحث عنها وتحليلها.",
     topics: [
       "Basics of Regex",
       "Character Classes",
       "Quantifiers and Grouping",
       "Practical Examples",
+    ],
+    ar_topics: [
+      "أساسيات التعبيرات النمطية",
+      "فئات الأحرف",
+      "المحددات والتجميع",
+      "أمثلة عملية",
     ],
     difficulty: "Beginner",
     image: require("../../assets/img/Regex/Landing.jpg"),
@@ -302,14 +439,23 @@ const courseData = [
   {
     id: 17,
     category: "Vulnerabilities",
-    title: "Cross-Site Scripting",
-    description:
+    en_title: "Cross-Site Scripting",
+    ar_title: "برمجة النصوص عبر المواقع",
+    en_description:
       "Identify and mitigate cross-site scripting risks in modern web applications.",
+    ar_description:
+      "تحديد وتخفيف مخاطر برمجة النصوص عبر المواقع في تطبيقات الويب الحديثة.",
     topics: [
       "What is Cross-Site Scripting?",
       "Types of XSS",
       "Exploitation Techniques",
       "Mitigation Strategies",
+    ],
+    ar_topics: [
+      "ما هي برمجة النصوص عبر المواقع؟",
+      "أنواع XSS",
+      "تقنيات الاستغلال",
+      "استراتيجيات التخفيف",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Cross_Site_Scripting/xss.jpeg.jpg"),
@@ -321,14 +467,23 @@ const courseData = [
   {
     id: 18,
     category: "Tools & Techniques",
-    title: "wireshark",
-    description:
+    en_title: "wireshark",
+    ar_title: "وايرشارك",
+    en_description:
       "Utilize Wireshark for deep network traffic analysis and security monitoring.",
+    ar_description:
+      "استخدام وايرشارك لتحليل حركة مرور الشبكة العميقة ومراقبة الأمان.",
     topics: [
       "Wireshark Overview",
       "Collection Methods",
       "ARP Traffic",
       "ICMP & TCP Traffic",
+    ],
+    ar_topics: [
+      "نظرة عامة على وايرشارك",
+      "طرق الجمع",
+      "حركة مرور ARP",
+      "حركة مرور ICMP و TCP",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/wireshark/card_image.png"),
@@ -340,14 +495,23 @@ const courseData = [
   {
     id: 19,
     category: "Fundamentals",
-    title: "Hashing",
-    description:
+    en_title: "Hashing",
+    ar_title: "التشفير التجزئي",
+    en_description:
       "Understand hashing concepts, algorithms, security implications, and best practices thoroughly.",
+    ar_description:
+      "فهم مفاهيم التشفير التجزئي، والخوارزميات، والآثار الأمنية، وأفضل الممارسات بشكل شامل.",
     topics: [
       "Introduction to Hashing",
       "Common Hashing Algorithms",
       "Security Implications",
       "Best Practices",
+    ],
+    ar_topics: [
+      "مقدمة في التشفير التجزئي",
+      "الخوارزميات الشائعة للتجزئة",
+      "الآثار الأمنية",
+      "أفضل الممارسات",
     ],
     difficulty: "Beginner",
     image: require("../../assets/img/Hashing/landing.jpg"),
@@ -359,14 +523,23 @@ const courseData = [
   {
     id: 20,
     category: "Vulnerabilities",
-    title: "Command Injection",
-    description:
+    en_title: "Command Injection",
+    ar_title: "حقن الأوامر",
+    en_description:
       "Learn command injection techniques, exploitation risks, and secure coding practices.",
+    ar_description:
+      "تعلم تقنيات حقن الأوامر، ومخاطر الاستغلال، وممارسات الترميز الآمن.",
     topics: [
       "Understanding Command Injection",
       "Networking Weaknesses",
       "Common Web Attacks",
       "Using the Linux OS",
+    ],
+    ar_topics: [
+      "فهم حقن الأوامر",
+      "نقاط الضعف في الشبكات",
+      "هجمات الويب الشائعة",
+      "استخدام نظام اللينكس",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Command Injection/Content_Command_Injection.jpg"),
@@ -378,14 +551,23 @@ const courseData = [
   {
     id: 21,
     category: "Vulnerabilities",
-    title: "File Inclusion",
-    description:
+    en_title: "File Inclusion",
+    ar_title: "تضمين الملفات",
+    en_description:
       "Examine file inclusion flaws, exploit methods, and robust remediation strategies.",
+    ar_description:
+      "افحص عيوب إدراج الملفات وطرق الاستغلال واستراتيجيات الإصلاح القوية.",
     topics: [
       "Path Traversal",
       "Local File Inclusion (LFI)",
       "Remote File Inclusion (RFI)",
       "Remediation",
+    ],
+    ar_topics: [
+      "تجاوز المسار",
+      "تضمين الملفات المحلية (LFI)",
+      "تضمين الملفات البعيدة (RFI)",
+      "الإصلاح",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/File Inclusion/card_image.png"),
@@ -397,14 +579,23 @@ const courseData = [
   {
     id: 22,
     category: "Fundamentals",
-    title: "Digital Forensics",
-    description:
+    en_title: "Digital Forensics",
+    ar_title: "الطب الشرعي الرقمي",
+    en_description:
       "Investigate digital evidence using forensic techniques for accurate cyber investigations.",
+    ar_description:
+      "تحقيق الأدلة الرقمية باستخدام تقنيات الطب الشرعي لتحقيقات سيبرانية دقيقة.",
     topics: [
       "Introduction to Digital Forensics",
       "Evidence Collection",
       "Analysis Techniques",
       "Case Studies",
+    ],
+    ar_topics: [
+      "مقدمة في الطب الشرعي الرقمي",
+      "جمع الأدلة",
+      "تقنيات التحليل",
+      "دراسات الحالة",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/AudFor/landing.png"),
@@ -416,14 +607,23 @@ const courseData = [
   {
     id: 23,
     category: "Vulnerabilities",
-    title: "Insecure Deserialization",
-    description:
+    en_title: "Insecure Deserialization",
+    ar_title: "إلغاء التسلسل غير الآمن",
+    en_description:
       "Detect insecure deserialization risks, prevent code execution, and secure data.",
+    ar_description:
+      "كشف مخاطر إلغاء التسلسل غير الآمن، ومنع تنفيذ التعليمات البرمجية، وتأمين البيانات.",
     topics: [
       "Serialization and Deserialization",
       "Remote Code Execution (RCE)",
       "Data Tampering Techniques",
       "Preventing Insecure Deserialization",
+    ],
+    ar_topics: [
+      "التسلسل وإلغاء التسلسل",
+      "تنفيذ التعليمات البرمجية عن بُعد (RCE)",
+      "تقنيات التلاعب بالبيانات",
+      "منع إلغاء التسلسل غير الآمن",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Insecure_Deserialization/Content_Insecure_Photo.jpg"),
@@ -435,15 +635,19 @@ const courseData = [
   {
     id: 24,
     category: "Vulnerabilities",
-    title: "Server Side Template Injection (SSTI)",
-    description:
+    en_title: "Server Side Template Injection (SSTI)",
+    ar_title: "حقن القالب من جانب الخادم (SSTI)",
+    en_description:
       "Understand SSTI risks, exploit techniques, and prevention strategies for templates.",
+    ar_description:
+      "فهم مخاطر SSTI وتقنيات الاستغلال واستراتيجيات الوقاية للقوالب.",
     topics: [
       "Introduction",
       "SSTI Vulnerabilities",
       "Constructing a SSTI Attack",
       "Prevention Strategies",
     ],
+    ar_topics: ["مقدمة", "ثغرات SSTI", "بناء هجوم SSTI", "استراتيجيات الوقاية"],
     difficulty: "Intermediate",
     image: require("../../assets/img/Server Side Template Injection/card_image.png"),
     state: "published",
@@ -454,14 +658,23 @@ const courseData = [
   {
     id: 25,
     category: "Tools & Techniques",
-    title: "API Hacking & Testing",
-    description:
+    en_title: "API Hacking & Testing",
+    ar_title: "اختراق واختبار API",
+    en_description:
       "Master API hacking techniques, testing methodologies, and security assessment procedures.",
+    ar_description:
+      "إتقان تقنيات اختراق API، منهجيات الاختبار، وإجراءات تقييم الأمان.",
     topics: [
       "API Fundamentals",
       "Common Vulnerabilities",
       "Testing Tools",
       "Mitigation Strategies",
+    ],
+    ar_topics: [
+      "أساسيات الAPI",
+      "الثغرات الشائعة",
+      "أدوات الاختبار",
+      "استراتيجيات التخفيف",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Api_Hacking/landing.png"),
@@ -474,10 +687,14 @@ const courseData = [
   {
     id: 26,
     category: "Fundamentals",
-    title: "Race Condition",
-    description:
+    en_title: "Race Condition",
+    ar_title: "شرط التسابق",
+    en_description:
       "A race condition occurs when multiple processes access shared resources simultaneously in an uncontrolled manner, leading to unexpected errors or security vulnerabilities.",
+    ar_description:
+      "تحدث حالة التسابق عندما تصل عدة عمليات إلى الموارد المشتركة في وقت واحد بطريقة غير منضبطة، مما يؤدي إلى أخطاء غير متوقعة أو ثغرات أمنية.",
     topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4"],
+    ar_topics: ["الموضوع 1", "الموضوع 2", "الموضوع 3", "الموضوع 4"],
     difficulty: "Intermediate",
     image: require("../../assets/img/Condition_Race/Race Condition.png"),
     state: "published",
@@ -488,14 +705,23 @@ const courseData = [
   {
     id: 27,
     category: "Vulnerabilities",
-    title: "Captcha Bypass",
-    description:
+    en_title: "Captcha Bypass",
+    ar_title: "تخطي الكابتشا",
+    en_description:
       "Examine captcha bypass methods, security flaws, and advanced prevention techniques.",
+      ar_description:
+      "افحص طرق تخطي الكابتشا، وثغرات الأمان، وتقنيات الوقاية المتقدمة.",
     topics: [
       "Introduction to Captcha",
       "Bypass Techniques",
       "Real-world Examples",
       "Prevention Strategies",
+    ],
+    ar_topics: [
+      "مقدمة عن الكابتشا",
+      "تقنيات التخطي",
+      "أمثلة واقعية",
+      "تقنيات الحماية",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Captcha Bypass/card_image.png"),
@@ -507,14 +733,22 @@ const courseData = [
   {
     id: 28,
     category: "Vulnerabilities",
-    title: "click jacking",
-    description:
+    en_title: "click jacking",
+    ar_title: "النقر الاحتيالي",
+    en_description:
       "Investigate click jacking strategies, analyze attack mechanisms, and implement countermeasures.",
+      ar_description: "تحقيق استراتيجيات النقر الاحتيالي، تحليل آليات الهجوم، وتنفيذ التدابير المضادة.",
     topics: [
       "What is Click Jacking?",
       "Attack Techniques",
       "Prevention Methods",
       "Case Studies",
+    ],
+    ar_topics: [
+      "ما هو النقر الاحتيالي؟",
+      "طرق الهجوم",
+      "طرق الوقاية",
+      "دراسات الحالة",
     ],
     difficulty: "Intermediate",
     image: require("../../assets/img/Click_Jacking/landing.jpg"),
@@ -526,8 +760,8 @@ const courseData = [
   {
     id: 29,
     category: "Fundamentals",
-    title: "Server Side Request Forgery (SSRF)",
-    description:
+    en_title: "Server Side Request Forgery (SSRF)",
+    en_description:
       "Placeholder course offering preliminary topics, soon updated with comprehensive content.",
     topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4"],
     difficulty: "Hard",
@@ -540,19 +774,138 @@ const courseData = [
   {
     id: 30,
     category: "Vulnerabilities",
-    title: "JWT attacks",
-    description:
+    en_title: "JWT attacks",
+    ar_title: "هجمات JWT",
+    en_description:
       "Examine JWT attack vectors, token vulnerabilities, and secure handling methods.",
+    ar_description: "افحص متجهات هجوم JWT، وثغرات الرموز، وطرق المعالجة الآمنة.",
     topics: [
       "Introduction to JWT",
       "Common Attack Vectors",
       "Security Best Practices",
       "Mitigation Techniques",
     ],
+    ar_topics: [
+      "مقدمة عن JWT",
+      "متجهات الهجوم الشائعة",
+      "أفضل ممارسات الأمان",
+      "تقنيات التخفيف",
+    ],
     difficulty: "Intermediate",
     image: require("../../assets/img/JWT attacks/card_image.png"),
     state: "published",
     link: "/jwtattacks",
+    favorite: false,
+    myCourses: false,
+  },
+  {
+    id: 31,
+    category: "Fav Topics",
+    en_title: "Regular expressions",
+    ar_title:"التعبيرات العادية",
+    en_description:
+      "Craft effective regular expressions for text matching, searching, and parsing.",
+      ar_description: "اصنع تعبيرات عادية فعالة لمطابقة النصوص، والبحث، والتحليل.",
+    topics: [
+      "Basics of Regex",
+      "Character Classes",
+      "Quantifiers and Grouping",
+      "Practical Examples",
+    ],
+    ar_topics: [
+      "أساسيات التعبيرات العادية",
+      "فئات الأحرف",
+      "المحددات والتجميع",
+      "أمثلة عملية",
+    ],
+    difficulty: "Beginner",
+    image: require("../../assets/img/Regex/Landing.jpg"),
+    state: "published",
+    link: "/Regex",
+    favorite: false,
+    myCourses: false,
+  },
+  {
+    id: 32,
+    category: "My Courses",
+    en_title: "Cross Site Request Forgery (CSRF)",
+    ar_title: "تزوير طلبات المواقع المتقاطعة (CSRF)",
+    en_description:
+      "Understand CSRF attack vectors, mitigation techniques, and prevention best practices.",
+    ar_description:
+      "فهم متجهات هجوم CSRF، وتقنيات التخفيف، وأفضل ممارسات الوقاية.",
+    topics: [
+      "Understanding CSRF",
+      "Exploitation Methods",
+      "Prevention Techniques",
+      "Real-world Examples",
+    ],
+    ar_topics: [
+      "فهم CSRF",
+      "طرق الاستغلال",
+      "تقنيات الوقاية",
+      "أمثلة من العالم الحقيقي",
+    ],
+    difficulty: "Intermediate",
+    image: require("../../assets/img/CSRF/landing.jpg"),
+    state: "published",
+    link: "/CSRF",
+    favorite: false,
+    myCourses: false,
+  },
+  {
+    id: 33,
+    category: "My Courses",
+    en_title: "Burp Suite",
+    ar_title: "Burp Suite",
+    en_description:
+      "Master Burp Suite fundamentals, empowering cybersecurity testing and vulnerability assessment.",
+    ar_description:
+      "إتقان أساسيات Burp Suite، مما يمكّن اختبار الأمن السيبراني وتقييم الثغرات.",
+    topics: [
+      "Learn about different careers in cyber",
+      "Hack your first application",
+      "Defend against a live cyber attack",
+      "Explore security topics in the industry",
+    ],
+    ar_topics: [
+      "تعلم عن مسارات مختلفة في الأمن السيبراني",
+      "اختراق تطبيقك الأول",
+      "الدفاع ضد هجوم سيبراني مباشر",
+      "استكشاف مواضيع الأمان في الصناعة",
+    ],
+    difficulty: "Intermediate",
+    image: require("../../assets/img/Burp_Suit/BurpSuit_Content.png"),
+    state: "published",
+    link: "/Burp_Suit",
+    favorite: false,
+    myCourses: false,
+  },
+  {
+    id: 34,
+    category: "My Courses",
+    en_title: "Cookies",
+    ar_title: "الكوكيز",
+    en_description:
+      "Understand cookies’ roles, security implications, storage methods, and manipulation techniques.",
+    ar_description:
+      "فهم أدوار الكوكيز، والآثار الأمنية، وطرق التخزين، وتقنيات التلاعب.",
+    topics: [
+      "What Are Cookies?",
+      "What are Cookies Used For?",
+      "Where are Cookies Stored?",
+      "Cookies Manipulation",
+    ],
+    ar_topics: [
+      "ما هي الكوكيز؟",
+      "ما هي استخدامات الكوكيز؟",
+      "أين يتم تخزين الكوكيز؟",
+      "تلاعب الكوكيز",
+    ],
+    difficulty: "Beginner",
+    image: require("../../assets/img/cookies/Cookies_transparent.png"),
+    state: "published",
+    link: "/cookies",
     favorite: false,
     myCourses: false,
   },
