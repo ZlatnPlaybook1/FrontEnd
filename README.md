@@ -158,5 +158,5 @@ npx prisma generate
 
 ## Authors
 
-- Ahmed Hussien
+- Ahmed Sherif
 - CyberLabs Team
